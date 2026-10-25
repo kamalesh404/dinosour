@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" height="340">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="880" height="340" rx="12" fill="#0b0f19" stroke="#1e293b"/>
+  <text x="440" y="38" font-family="sans-serif" font-size="18" font-weight="700" fill="#f8fafc" text-anchor="middle">
+    Dinosour Architecture &amp; Execution Pipeline
+  </text>
+
+  <!-- User Input / Event Layer -->
+  <g transform="translate(40, 80)">
+    <rect width="220" height="200" rx="8" fill="url(#cardBg)" stroke="#334155"/>
+    <text x="110" y="30" font-family="sans-serif" font-size="14" font-weight="700" fill="#38bdf8" text-anchor="middle">1. Input &amp; Event Loop</text>
+    <text x="20" y="65" font-family="sans-serif" font-size="12" fill="#94a3b8">• Spacebar / ArrowUp (Jump)</text>
+    <text x="20" y="90" font-family="sans-serif" font-size="12" fill="#94a3b8">• Touch / Tap Screen</text>
+    <text x="20" y="115" font-family="sans-serif" font-size="12" fill="#94a3b8">• Keyboard Event Listeners</text>
+    <text x="20" y="140" font-family="sans-serif" font-size="12" fill="#94a3b8">• Pause / Restart State</text>
+    <text x="20" y="165" font-family="sans-serif" font-size="12" fill="#64748b">React 18 State &amp; Refs</text>
+  </g>
+
+  <!-- Physics & Game Engine -->
+  <g transform="translate(330, 80)">
+    <rect width="220" height="200" rx="8" fill="url(#cardBg)" stroke="#10b981"/>
+    <text x="110" y="30" font-family="sans-serif" font-size="14" font-weight="700" fill="#10b981" text-anchor="middle">2. 60 FPS Game Loop</text>
+    <text x="20" y="65" font-family="sans-serif" font-size="12" fill="#94a3b8">• requestAnimationFrame</text>
+    <text x="20" y="90" font-family="sans-serif" font-size="12" fill="#94a3b8">• Gravity (0.6px/frame²)</text>
+    <text x="20" y="115" font-family="sans-serif" font-size="12" fill="#94a3b8">• AABB Collision Detection</text>
+    <text x="20" y="140" font-family="sans-serif" font-size="12" fill="#94a3b8">• Dynamic Speed Acceleration</text>
+    <text x="20" y="165" font-family="sans-serif" font-size="12" fill="#64748b">HTML5 2D Canvas Engine</text>
+  </g>
+
+  <!-- Storage & Persistence Layer -->
+  <g transform="translate(620, 80)">
+    <rect width="220" height="200" rx="8" fill="url(#cardBg)" stroke="#a855f7"/>
+    <text x="110" y="30" font-family="sans-serif" font-size="14" font-weight="700" fill="#a855f7" text-anchor="middle">3. Score Storage Layer</text>
+    <text x="20" y="65" font-family="sans-serif" font-size="12" fill="#94a3b8">• useGameScores Hook</text>
+    <text x="20" y="90" font-family="sans-serif" font-size="12" fill="#94a3b8">• Supabase Postgres Client</text>
+    <text x="20" y="115" font-family="sans-serif" font-size="12" fill="#94a3b8">• Row-Level Security (RLS)</text>
+    <text x="20" y="140" font-family="sans-serif" font-size="12" fill="#94a3b8">• Offline LocalStorage Fallback</text>
+    <text x="20" y="165" font-family="sans-serif" font-size="12" fill="#64748b">Fault-Tolerant Persistence</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="260" y1="180" x2="330" y2="180" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="330,180 322,175 322,185" fill="#38bdf8"/>
+
+  <line x1="550" y1="180" x2="620" y2="180" stroke="#10b981" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="620,180 612,175 612,185" fill="#10b981"/>
+</svg>
